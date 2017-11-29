@@ -26,6 +26,7 @@ alias gc "git commit -m"
 alias ggl "git pull origin master"
 alias ggp "git push origin master"
 alias glo "git log --oneline"
+alias gcm "git checkout master"
 
 #laravel
 alias art "php artisan"
@@ -35,8 +36,9 @@ alias tinker "php artisan tinker"
 alias dusk "php artisan dusk"
 alias routes "php artisan route:list"
 alias fresh "php artisan migrate:fresh --seed"
+alias queue "php artisan queue:work"
 alias pu "phpunit"
-
+alias emptylog "truncate -s 0 storage/logs/laravel.log"
 
 #composer
 alias cu "composer update"

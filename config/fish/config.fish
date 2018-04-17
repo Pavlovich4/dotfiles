@@ -26,7 +26,8 @@ alias gc "git commit -m"
 alias ggl "git pull origin master"
 alias ggp "git push origin master"
 alias glo "git log --oneline"
-alias gcm "git checkout master"
+alias ggm "git checkout master"
+alias gam "git archive master -o"
 
 #laravel
 alias art "php artisan"
@@ -44,4 +45,24 @@ alias emptylog "truncate -s 0 storage/logs/laravel.log"
 alias cu "composer update"
 alias cda "composer dump-autoload"
 alias ci "composer install"
+alias crq "composer require"
+alias crm "composer remove"
 alias csu "sudo composer self-update"
+
+#redis
+alias rcm "redis-cli monitor"
+
+#php
+alias phpserve "php -S localhost:8000 -d display_errors=1 -t public"
+
+#docker
+alias dv "docker version"
+alias dlc "docker container ls"
+alias dli "docker image ls"
+alias dcu "docker-compose up"
+alias dcud "docker-compose up -d"
+alias dcb "docker-compose build"
+alias dcr "docker-compose rm"
+alias dcs "docker-compose stop"
+alias dr "docker run -ti"
+alias de "docker exec -ti"

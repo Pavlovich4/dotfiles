@@ -93,7 +93,31 @@ alias dr "docker run -ti"
 alias de "docker exec -ti"
 
 #npm
+alias npmu "sudo npm i -g npm"
 alias npmclear "rm -rf node_modules/; rm package-lock.json; npm i"
 
 #wp-cli
-alias wpd="wp core download --locale=fr_FR"
+alias wpd "wp core download --locale=fr_FR"
+
+#apache2
+alias ssar "sudo service apache2 restart"
+alias sacc "sudo /usr/sbin/apache2ctl configtest"
+
+#cordova
+alias cba "cordova build android"
+alias cra "cordova run android"
+alias cbr "cordova build android; cordova run android"
+alias cpaa "cordova platforms add android"
+
+#symfony
+alias sf "php bin/console"
+alias sfsr "php bin/console server:run"
+alias sfdr "php bin/console debug:router"
+alias sfgb "php bin/console generate:bundle"
+alias sfgc "php bin/console generate:controller"
+alias sfgc "php bin/console generate:controller"
+alias sfgde "php bin/console generate:doctrine:entity"
+alias sfdge "php bin/console doctrine:generate:entities"
+alias sfdsuf "php bin/console doctrine:schema:update --force"
+alias sfdsdf "php bin/console doctrine:schema:drop --force"
+alias sfdfl "php bin/console doctrine:fixture:load"

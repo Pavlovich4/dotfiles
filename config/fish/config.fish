@@ -19,18 +19,41 @@ alias sacs "sudo apt-cache search"
 alias sacp "sudo apt-cache policy"
 alias saar "sudo add-apt-repository"
 
+#clear
+alias c "clear"
+
 #git
 alias gst "git status"
 alias gaa "git add --all"
 alias gc "git commit -m"
 alias ggl "git pull origin master"
 alias ggp "git push origin master"
-alias glo "git log --oneline"
+alias ggpt "git push --tags"
+alias ggpd "git push origin develop"
+alias glo "git log --oneline --graph --color --all --decorate"
 alias ggm "git checkout master"
 alias gam "git archive master -o"
+alias grv "git remote -v"
+alias grro "git remote rm origin"
+alias grao "git remote add origin"
+alias grc "git reset --hard; git clean -df"
+alias gk "gitk --all"
+
+#git-flow
+alias gfi "git flow init"
+alias gffs "git flow feature start"
+alias gfff "git flow feature finish"
+alias gffp "git flow feature publish"
+alias gfrs "git flow release start"
+alias gfrf "git flow release finish"
+alias gfhs "git flow hotfix start"
+alias gfhf "git flow hotfix finish"
+
 
 #laravel
 alias art "php artisan"
+alias controller "php artisan make:controller"
+alias model "php artisan make:model"
 alias serve "php artisan serve"
 alias migrate "php artisan migrate"
 alias tinker "php artisan tinker"
@@ -38,6 +61,8 @@ alias dusk "php artisan dusk"
 alias routes "php artisan route:list"
 alias fresh "php artisan migrate:fresh --seed"
 alias queue "php artisan queue:work"
+alias horizon "php artisan horizon"
+alias artclear "php artisan view:clear; php artisan cache:clear; php artisan route:clear; php artisan clear-compiled; php artisan config:clear"
 alias pu "phpunit"
 alias emptylog "truncate -s 0 storage/logs/laravel.log"
 
@@ -66,3 +91,9 @@ alias dcr "docker-compose rm"
 alias dcs "docker-compose stop"
 alias dr "docker run -ti"
 alias de "docker exec -ti"
+
+#npm
+alias npmclear "rm -rf node_modules/; rm package-lock.json; npm i"
+
+#wp-cli
+alias wpd="wp core download --locale=fr_FR"

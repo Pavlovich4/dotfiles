@@ -63,6 +63,7 @@ alias fresh "php artisan migrate:fresh --seed"
 alias queue "php artisan queue:work"
 alias horizon "php artisan horizon"
 alias artclear "php artisan view:clear; php artisan cache:clear; php artisan route:clear; php artisan clear-compiled; php artisan config:clear"
+alias debugbarclear "php artisan debugbar:clear"
 alias pu "phpunit"
 alias emptylog "truncate -s 0 storage/logs/laravel.log"
 
